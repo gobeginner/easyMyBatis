@@ -110,4 +110,69 @@ package.controller=controller
 #文件输出路径
 path.base=D:/Maven-spacework/easy-java/easyJava-demo/src/main/
 ```
-
+## 运行RunApplication.java生成代码
+结构：
+```java
+D:.
+│  easyJava-demo.iml
+│  pom.xml
+│             
+├─src
+   ├─main
+   │  ├─java
+   │  │  └─cn
+   │  │      └─pan
+   │  │          │  RunDemoApplication.java
+   │  │          │  
+   │  │          ├─controller
+   │  │          │      ABaseController.java
+   │  │          │      AGlobalExceptionHandlerController.java
+   │  │          │      ProductInfoController.java
+   │  │          │      
+   │  │          ├─entity
+   │  │          │  ├─enums
+   │  │          │  │      DateTimePatternEnum.java
+   │  │          │  │      PageSize.java
+   │  │          │  │      ResponseCodeEnum.java
+   │  │          │  │      
+   │  │          │  ├─po
+   │  │          │  │      ProductInfo.java
+   │  │          │  │      
+   │  │          │  ├─query
+   │  │          │  │      BaseQuery.java
+   │  │          │  │      ProductInfoQuery.java
+   │  │          │  │      SimplePage.java
+   │  │          │  │      
+   │  │          │  └─vo
+   │  │          │          PaginationResultVO.java
+   │  │          │          ResponseVO.java
+   │  │          │          
+   │  │          ├─exception
+   │  │          │      BusinessException.java
+   │  │          │      
+   │  │          ├─mappers
+   │  │          │      BaseMapper.java
+   │  │          │      ProductInfoMapper.java
+   │  │          │      
+   │  │          ├─service
+   │  │          │  │  ProductInfoService.java
+   │  │          │  │  
+   │  │          │  └─impl
+   │  │          │          ProductInfoServiceImpl.java
+   │  │          │          
+   │  │          └─utils
+   │  │                  DateUtil.java
+   │  │                  
+   │  └─resources
+   │      │  application.properties
+   │      │  logback-spring.xml
+   │      │  
+   │      └─cn
+   │          └─pan
+   │              └─mappers
+   │                      ProductInfoMapper.xml
+   │                      
+   └─test
+       └─java
+           └─cn
+               └─pan
